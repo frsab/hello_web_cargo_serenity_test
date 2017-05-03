@@ -1,0 +1,47 @@
+2017-05-03 14:43:56.436:INFO:oejs.Server:jetty-8.1.17.v20150415
+2017-05-03 14:43:56.460:INFO:oejdp.ScanningAppProvider:Deployment monitor D:\Users\safraj\workspaces\CargoWS\projetCargot\target\cargo\configurations\jetty8x\webapps at interval 1
+2017-05-03 14:43:56.467:INFO:oejd.DeploymentManager:Deployable added: D:\Users\safraj\workspaces\CargoWS\projetCargot\target\cargo\configurations\jetty8x\webapps\cargocpc.war
+2017-05-03 14:43:56.526:INFO:oejw.WebInfConfiguration:Extract jar:file:/D:/Users/safraj/workspaces/CargoWS/projetCargot/target/cargo/configurations/jetty8x/webapps/cargocpc.war!/ to C:\Users\safraj\AppData\Local\Temp\jetty-0.0.0.0-8080-cargocpc.war-_cargocpc-any-\webapp
+2017-05-03 14:43:56.638:INFO:oejpw.PlusConfiguration:No Transaction manager found - if your webapp requires one, please configure one.
+2017-05-03 14:43:56.999:INFO:oejdp.ScanningAppProvider:Deployment monitor D:\Users\safraj\workspaces\CargoWS\projetCargot\target\cargo\configurations\jetty8x\contexts at interval 1
+2017-05-03 14:43:57.001:INFO:oejd.DeploymentManager:Deployable added: D:\Users\safraj\workspaces\CargoWS\projetCargot\target\cargo\configurations\jetty8x\contexts\projetCargot.xml
+2017-05-03 14:43:57.011:WARN:oejw.WebInfConfiguration:Web application not found D:\Users\safraj\workspaces\CargoWS\projetCargot\target\projetCargot-1.0.war
+2017-05-03 14:43:57.012:WARN:oejw.WebAppContext:Failed startup of context o.e.j.w.WebAppContext{/projetCargot,null},D:\Users\safraj\workspaces\CargoWS\projetCargot\target\projetCargot-1.0.war
+java.io.FileNotFoundException: D:\Users\safraj\workspaces\CargoWS\projetCargot\target\projetCargot-1.0.war
+	at org.eclipse.jetty.webapp.WebInfConfiguration.unpack(WebInfConfiguration.java:505)
+	at org.eclipse.jetty.webapp.WebInfConfiguration.preConfigure(WebInfConfiguration.java:71)
+	at org.eclipse.jetty.webapp.WebAppContext.preConfigure(WebAppContext.java:457)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:493)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(StandardStarter.java:39)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:186)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:494)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:141)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:145)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:56)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:615)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:540)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:403)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:121)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:555)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:230)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.util.component.AggregateLifeCycle.doStart(AggregateLifeCycle.java:81)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:58)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:96)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.xml.XmlConfiguration$1.run(XmlConfiguration.java:1274)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:473)
+	at org.eclipse.jetty.start.Main.start(Main.java:615)
+	at org.eclipse.jetty.start.Main.main(Main.java:96)
+2017-05-03 14:43:57.529:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:8080
